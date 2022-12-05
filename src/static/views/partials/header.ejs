@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notaría Abuyeres</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="/img/logo-notaria.png">
+</head>
+    <nav id="sombra-menu" class="navbar navbar-expand-md navbar-dark bg-dark ">
+        <div class="container-fluid">
+            <img id="logo" src="/img/logo-notaria.png" alt="">                   
+            <a class="navbar-brand " href="/"><h2 id="Notaria-titulo">Notaría</h2></a>
+            <a class="navbar-brand " href="/"><h2>Abuyeres</h2></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                <ul class="navbar-nav">
+                <br>
+                <li class="nav-item">
+                    <a id="Menu-a" class="nav-link p-2" href="/">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a id="Menu-a" class="nav-link p-2" href="#Servicios">Servicios </a>
+                </li>
+
+                <% if(!username) {%>
+
+                <li class="nav-item">
+                    <a id="Menu-a" class="nav-link p-2" href="/registro">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                    <a id="Menu-a" class="nav-link p-2" href="login" >Iniciar Sesión</a>
+                </li>
+                <% }%>
+                <% if(username){%>
+                    <div class="dropdown">
+                        <button id="Menu-a" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <%= nombreCompleto %>
+                        </button>
+                        <ul id="menu-perfilUsuario" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li id="menu-perfilUsuario-li"><a class="dropdown-item" href="newReserva">Reservar una Hora</a></li>
+                          <li id="menu-perfilUsuario-li"><a class="dropdown-item" href="historialReservas">Historial de Reservas</a></li>
+                          <li id="menu-perfilUsuario-li"><a class="dropdown-item" href="historial_doc">Historial de Documentos</a></li>
+                        </ul>
+                    </div>
+                    <li class="nav-item">
+                        <a id="Menu-a" class="nav-link p-2" href="/logout">Cerrar Sesion</a>
+                    </li>
+                <% }%>
+                </ul>
+                
+            </div>
+            </div>
+        </div>
+    </nav>
+    

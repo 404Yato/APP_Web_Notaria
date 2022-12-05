@@ -1,0 +1,286 @@
+header{
+    width: 100%;
+    height: 600px;
+    background: #1A2980;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom,hsla(231, 66%, 30%, 0.600), hsla(179, 69%, 48%, 0.600)), url(../img/port.png);
+    background: linear-gradient(to bottom, hsla(231, 66%, 30%, 0.600), hsla(179, 69%, 48%, 0.600)), url(../img/port.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+html{
+    scroll-behavior: smooth;
+}
+.Head-menu{
+    width: 100% !important;
+    height: auto;
+    position: absolute;
+
+
+}
+#logo{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 55px;
+    width: 55px;
+}
+#Notaria-titulo{
+    color: #00CCFF;
+}
+#Color-titulo{
+    color: #0b6277;
+}
+#sombra-menu{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 5px 5px 20px  rgba(0,0,0,0.4);
+    position: fixed; 
+    width: 100%;
+    z-index: 100;
+}
+#Menu-a{
+    color: #00CCFF;
+    border-radius: 15px;
+    transition: all 400ms ease;
+    margin-right: 5px;
+    font-size: 17px;
+
+}
+#Menu-a:hover{
+    color: white;  
+    background-color: rgb(12, 89, 109);  
+}
+#Menu-div{
+    padding: 0px;
+}
+#Servicios{
+    background-color: rgb(243, 253, 253);
+}
+#Hora-atencion{
+    background-color:rgb(253, 253, 238);;
+}
+#Notaria{
+    background-color:rgb(243, 248, 253);
+}
+
+
+#Map-google{
+    border-radius: 30px;
+    box-shadow: 0px 1px 10px  rgba(0,0,0,0.2);
+    
+}
+#Card-doc{
+    box-shadow: 0px 1px 10px  rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+    
+}
+#Imagen-Card{
+    width: 300px;
+    height: 600px;
+}
+#Card-doc:hover{
+    box-shadow: 5px 5px 20px  rgba(0,0,0,0.4);
+    transform: translateY(-2%);
+    
+}
+#Imagen-galeria{
+    width: 100%;
+    height: 250px;
+    transition: all 400ms ease;
+    margin-bottom: 2px;
+}
+#Imagen-galeria:hover{
+    width: 98%;
+    box-shadow: 3px 3px 0px 0px rgb(128, 128, 128);
+    
+}
+#Seccion-not{
+    padding-left: 3px;
+    background: gold;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+.menu-main{
+    width: 100%;
+    height: 15%;
+}
+.menu-logo{
+    float: left     ;
+}
+.menu-titulo{
+    float: left;
+}
+.menu-accion{
+    margin-top: 15px;
+    float: right;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+}
+
+.contenedor-hora{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.imagen-horario{
+    width: 40%;
+}
+.contenedor-horarios{
+    display: table;
+    text-align: left;
+}
+.horario{   
+    display:table-cell;
+    vertical-align:middle;
+    font-size: 20px;
+  
+}
+.dias{
+    background: #3a51b6;
+    color: white;
+    border-radius: 10%;
+    display: inline-block;
+    text-align: center;
+    width: 75px;
+    padding: 3px;
+    margin: 2px;
+    
+}
+#links-logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+#links-logo:hover{
+    box-shadow: 3px 0px 3px 0px rgb(46, 170, 187);
+}
+
+#links-a{
+    text-decoration: none;
+    margin-left: 5px;
+    color: white;
+}
+#links-a:hover{
+    color: rgb(46, 170, 187);
+    text-decoration:underline;
+}
+
+#tablaHistorial{
+    border: black 2px solid;
+    border-radius: 15px;
+ }
+ 
+ #theader{
+     border: none;
+ }
+ 
+ #tbody{
+     border: none;
+ }
+
+ #formReserva{
+    background: #fcfdf6;
+    box-shadow: 5px 5px 20px  rgba(0,0,0,0.2);
+    border-radius: 15px;
+}
+
+#martillo{
+    height: 250px;
+    width: 250px;
+}
+
+#inicioR{
+    background-color: #ffffff;
+    text-align: left;
+    margin: 0 auto;
+    height: 940px;
+    width: 400px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    border-radius: 15px;
+    border: 5px solid #eeeeee;
+    box-shadow: 5px 5px 20px  rgba(109, 191, 197, 0.788);
+}
+
+#titulo-r-i{
+    color: #0b6277;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#diseño-ingresed{
+    color: #0b6277;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#btn-r{
+    margin-top: 10px;
+}
+
+#campos{
+    display:table-cell;
+    vertical-align:middle;
+    font-size: 20px;
+    margin-left: 500px;
+    border: 5px solid #00CCFF;
+}
+
+#inicioL{
+    background-color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    height: 400px;
+    width: 400px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    border-radius: 15px;
+    border: 5px solid #eeeeee;
+}
+
+#pregunta{
+    margin-top: 15px;
+}
+
+#Imagen-Servicios{
+    margin-top: 10px;
+    height: 300px;
+    width: 300px;
+}
+
+#carta{
+    height: 230px;
+}
+
+#btnGuardarForm{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#btn_cancelar_login{
+    margin-top: 10px;
+}
+
+#help-message{
+    font-size: 12px;
+    color: rgb(117, 117, 117);
+    margin-left: 10px;
+}
+
+#log-in-back{
+    background-color: #0b6277;;
+}
+
+#formLogin{
+    background: #fcfdf6;
+    box-shadow: 5px 5px 20px  rgba(109, 191, 197, 0.788);
+    border-radius: 15px;
+}

@@ -1,0 +1,86 @@
+<%- include('partials/header'); %>
+        <!--Body -->
+    <body>
+      <main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="Servicios">
+          
+            <br>
+            <div class="container" >
+              <div class="row justify-content-center" >
+                <% for(let i = 0; i < reservas.length; i++) { %>
+                    <form class=" col-lg-5 col-md-8 col-sm-12 col-8 needs-validation" action="/modificarReserva/<%= reservas[i].cod_reserva %>" method="post" id="formModReserva" novalidate>
+                        <div class="text-center pt-5">
+                            <h2 id="Color-titulo">Modificar Reserva</h2>
+                            <hr>
+                        </div>
+                        
+                        <div class="mb-3">
+                          
+                            <label class="form-label">Motivo</label>
+                            <input class="form-control" type="text" name="motivo" value="<%= reservas[i].motivo %>" placeholder="Necesito una carta de poder..." required>
+                            <div class="valid-feedback">
+                                Correcto!
+                            </div>
+                            <div class="invalid-feedback">
+                                Debe ingresar un motivo
+                            </div>
+    
+                        </div>
+                       
+                        <div class="mb-3">
+    
+                            <label class="form-label">Fecha</label>
+                            <input type="date" name="fecha" id="fecha" value="<%= reservas[i].fecha_hora %>" class="form-control" required>
+                            <div class="valid-feedback">
+                                Correcto!
+                            </div>
+                            <div class="invalid-feedback">
+                                Debe ingresar una fecha
+                            </div>
+                        </div>
+    
+                        <div class="mb-3">
+    
+                            <label class="form-label">Hora</label>
+                            <input type="time" name="hora" value="09:00" class="form-control" required>
+                            <div class="valid-feedback">
+                                Correcto!
+                            </div>
+                            <div class="invalid-feedback">
+                                Debe ingresar una hora
+                            </div>
+                        </div>
+                        <% } %>
+                        <div class="container col-lg-5 col-md-5 col-sm-4">
+                            <div class="row justify-content-md-center">
+                                <button type="submit" class="btn btn-primary btn-lg" id="btnGuardarForm">Guardar</button>
+                            </div>
+            
+                        </div>
+                        
+                      </form>
+              </div>
+                
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+        </div>
+
+      </main>
+
+      <!--FOOTER -->
+      <%- include('partials/footer'); %>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+      <script src="../js/validaciones.js"></script>
+  </body>
+</html>

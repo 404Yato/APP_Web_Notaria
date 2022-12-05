@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notaría Abuyeres</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="/img/logo-notaria.png">
+</head>
+<br>
+<br>
+<br>
+<br>
+<body id="log-in-back">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="text-center">
+                <img class="img-fluid" src="/img/Logo-Nota.png" alt="">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container" >
+        <div class="row justify-content-center" >
+          <form class=" col-lg-5 col-md-8 col-sm-12 col-8 needs-validation" action="/login" method="POST" id="formReserva" novalidate>
+              <div class="text-center pt-5">
+                  <h2 id="Color-titulo">Iniciar Sesión</h2>
+                  <hr>
+              </div>
+
+              <div class="mb-3">
+                  <label class="form-label">Rut</label>
+                  <input type="text" class="form-control" id="rut" name="username" tabindex="1" placeholder="Ej: 12345678-9" required>
+                  <h9 id="help-message">Sin puntos y con guión</h9>
+                  <div class="valid-feedback">
+                      Correcto!
+                  </div>
+                  <div class="invalid-feedback">
+                      Debe ingresar un rut 
+                  </div>
+              </div>
+
+              <div class="mb-3">
+                  <label class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="pass" name="password" tabindex="6" required>
+                  <div class="valid-feedback">
+                      Correcto!
+                  </div>
+                  <div class="invalid-feedback">
+                      Debe ingresar una contraseña
+                  </div>
+              </div>
+              <br>
+              <div class="container col-lg-5 col-md-5 col-sm-4">
+                  <div class="row justify-content-md-center">
+                    <button type="submit" class="btn btn-primary" tabindex="5">Ingresar</button>
+
+                  </div>
+
+                  <div id="btn_cancelar_login" class="row justify-content-md-center">
+                    <a href="/" class="btn btn-secondary">Cancelar</a>
+                  </div>
+
+              </div>
+              <br><br>
+            </form>
+        </div>
+
+      </div>
+
+    <script src="../js/validaciones.js"></script>
+</body>
+<br><br><br>
+<%- include('partials/footer'); %>
+</html>
